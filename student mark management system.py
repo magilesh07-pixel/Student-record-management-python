@@ -19,7 +19,6 @@ while True:
 
     choice = int(input("Enter your choice : "))
 
-    # ---------------- ADD STUDENT ----------------
     if choice == 1:
         name = input("Enter student's name : ")
         roll = input("Enter roll number : ")
@@ -38,7 +37,6 @@ while True:
 
         print("Student added successfully!")
 
-    # ---------------- VIEW STUDENTS ----------------
     elif choice == 2:
         if len(students) == 0:
             print("No students found.")
@@ -51,7 +49,6 @@ while True:
                     "| Marks:", s["marks"]
                 )
 
-    # ---------------- SEARCH STUDENT ----------------
     elif choice == 3:
         search_roll = input("Enter roll number to search : ")
         found = False
@@ -70,10 +67,10 @@ while True:
         if not found:
             print("Student not found.")
 
-    # ---------------- EXIT ----------------
     elif choice == 4:
         print("Exiting Program. Bye!")
         break
 
     else:
         print("Invalid choice. Please enter 1, 2, 3, or 4.")
+
